@@ -15,7 +15,7 @@ let counter=setInterval(function(){
   else if (daynight>=8){
     console.log("of")
   }
-console.log(`${daynight}\u00b0 Time is 12:00`)
+console.log(`${daynight}\u00b0 `)
 
 
   daynight+=step
