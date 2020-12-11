@@ -4,18 +4,18 @@ step=2
 let counter=setInterval(function(){
     
    if (daynight<0 || daynight>12){
-    if (daynight +=step *=-1){
-      
+    if (daynight >=step){
+      daynight +=step *=-1
+      console.log(`${daynight}\u00b0 `)
     }
   
   }
   else if (daynight<8){
-    console.log("on")
+    console.log(`${daynight}\u00b0 on`)
   }
   else if (daynight>=8){
-    console.log("of")
+    console.log(`${daynight}\u00b0 off`)
   }
-console.log(`${daynight}\u00b0 `)
 
 
   daynight+=step
