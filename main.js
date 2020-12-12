@@ -5,11 +5,15 @@ let counter=setInterval(function(){
     
    if (daynight<0 || daynight>12){
     if (daynight >=step){
-      daynight +=step *=-1
-      console.log(`${daynight}\u00b0 `)
+   
+    step *=-1
+    daynight +=step    
+  
+     console.log(`${daynight}\u00b0 `)
     }
   
   }
+
   else if (daynight<8){
     console.log(`${daynight}\u00b0 on`)
   }
@@ -17,8 +21,6 @@ let counter=setInterval(function(){
     console.log(`${daynight}\u00b0 off`)
   }
 
+   daynight+=step
 
-  daynight+=step
-
-},2000)
-
+},500)
