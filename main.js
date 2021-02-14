@@ -6,10 +6,11 @@ let counter = setInterval(function () {
   if (daynight === 0 || daynight === 24) {
     count = -count;
   }
-  console.log(daynight);
+  console.log(daynight)
   if (daynight <= 8) {
-    console.log(`${daynight}\u00b0 on`);
+    console.log(`\u00b0 on`);
   } else if (daynight >= 16) {
-    console.log(`${daynight}\u00b0 of`);
+    console.log(`\u00b0 of`);
   }
 }, 1000);
+
